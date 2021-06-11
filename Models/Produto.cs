@@ -21,14 +21,12 @@ namespace Produtos.Models
         public string Descricao { get; set;}
 
         [Required(ErrorMessage ="Peso obrigatório")]
-        [Range(1.00, 50.00, ErrorMessage ="Insira um peso entre 0,5 e 50")]
         public decimal Peso { get; set; }
 
         [Required(ErrorMessage ="Campo obrigatório!")]
         public string Categoria { get; set; }
 
         [Required(ErrorMessage = "Valor unitário obrigatório")]
-        [Range(1.00, 200.00, ErrorMessage = "Insira um valor unitário entre 0,5 e 200")]
         public decimal ValorUnit { get; set; }
 
     }
